@@ -6,8 +6,8 @@ import torch
 from transformers import RAGTokenizer, RAGQuestionEncoder, RAGRetriever
 
 # Replace with your Gemini model names
-model_name = "google/bard-large"  # Encoder/decoder model (change to Gemini model name)
-tokenizer_name = "google/bard-large"  # Tokenizer (change to Gemini model name)
+model_name = "gemini-pro"  # Encoder/decoder model (change to Gemini model name)
+tokenizer_name = "models/embedding-001"  # Tokenizer (change to Gemini model name)
 
 # Set up Gemini Client with API Key (stored in secrets)
 client = GenerativeAiClient(api_key=st.secrets["gemini_key"])
